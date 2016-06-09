@@ -1,0 +1,12 @@
+banned_my_augment = {
+	opinion = -75
+}
+religious_banned_augments = {
+	opinion = 15
+}
+allowed_my_augment = {
+	opinion = 40
+}
+religious_allowed_augments = {
+	opinion = -40
+}

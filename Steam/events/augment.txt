@@ -1,0 +1,333 @@
+namespace = augment
+
+character_event = {
+	id = augment.1
+	desc = EVTDESCaugment1
+	
+	is_triggered_only = yes
+	
+	option = { #Buy gearhead
+		name = EVTOPTAaugment1
+		trigger = {
+			wealth = 500
+			NOT = { trait = gearhead }
+		}
+		wealth = -500
+		character_event = { id = augment.3 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { #Buy clockheart
+		name = EVTOPTBaugment1
+		trigger = {
+			NOT = { trait = clockheart }
+			wealth = 450
+		}
+		wealth = -450
+		character_event = { id = augment.4 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { #Buy ironjaw
+		name = EVTOPTCaugment1
+		trigger = {
+			wealth = 100
+			NOT = { trait = ironjaw }
+		}
+		wealth = -100
+		character_event = { id = augment.5 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { #More
+		name = EVTOPTDaugment1
+		character_event = { id = augment.2 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+character_event = {
+	id = augment.2
+	desc = EVTDESCaugment2
+	
+	is_triggered_only = yes
+	
+	option = { #Buy heavyhand
+		name = EVTOPTAaugment2
+		trigger = {
+			wealth = 250
+			NOT = { trait = heavyhand }
+		}
+		wealth = -250
+		character_event = { id = augment.6 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { #Buy ironfoot
+		name = EVTOPTBaugment2
+		trigger = {
+			wealth = 250
+			NOT = { trait = ironfoot }
+		}
+		wealth = -250
+		character_event = { id = augment.7 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { #Buy steameye
+		name = EVTOPTCaugment2
+		trigger = {
+			wealth = 150
+			NOT = { trait = steameye }
+		}
+		wealth = -150
+		character_event = { id = augment.8 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { #Exit
+		name = EVTOPTDaugment2
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+character_event = {
+	id = augment.3
+	desc = EVTDESCaugment3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment3
+		add_trait = gearhead
+		set_character_flag = augmented
+	}
+}
+
+character_event = {
+	id = augment.4
+	desc = EVTDESCaugment4
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment4
+		add_trait = clockheart
+		set_character_flag = augmented
+	}
+}
+
+character_event = {
+	id = augment.5
+	desc = EVTDESCaugment5
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment5
+		add_trait = ironjaw
+		set_character_flag = augmented
+	}
+}
+
+character_event = {
+	id = augment.6
+	desc = EVTDESCaugment6
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment6
+		add_trait = heavyhand
+		set_character_flag = augmented
+	}
+}
+
+character_event = {
+	id = augment.7
+	desc = EVTDESCaugment7
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment7
+		add_trait = ironfoot
+		set_character_flag = augmented
+	}
+}
+
+character_event = {
+	id = augment.8
+	desc = EVTDESCaugment8
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment8
+		add_trait = steameye
+		set_character_flag = augmented
+	}
+}
+
+character_event = {
+	id = augment.9
+	desc = EVTDESCaugment9
+	
+	trigger = {
+		AND = {
+			has_character_flag = augmented
+			top_liege = {
+				primary_title = {
+					has_law = augmentation_law_0
+				}
+			}
+			independent = no
+			NOT = {
+				has_character_flag = hidden_augment
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.25
+			top_liege = { trait = paranoid }
+		}
+		modifier = {
+			factor = 2
+			top_liege = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0
+			top_liege = { has_character_flag = augmented }
+		}
+	}
+	
+	option = { #Hide it!
+		name = EVTOPTAaugment9
+		trigger = { intrigue = 10 }
+		
+		random_list = {
+			50 = {
+				character_event = { id = augment.10 }
+			}
+			50 = {
+				character_event = { id = augment.11 }
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				NOT = { intrigue = 10 }
+			}
+		}
+	}
+	
+	option = { #Flee!
+		name = EVTOPTBaugment9
+		trigger = { is_ruler = no }
+		
+		ROOT = { banish = yes }
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				is_ruler = no
+			}
+		}
+	}
+	
+	option = { #Concede...
+		name = EVTOPTCaugment9
+		
+		character_event = { id = augment.12 }
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+character_event = {
+	id = augment.10
+	desc = EVTDESCaugment10
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment10
+		
+		clr_character_flag = augmented
+		set_character_flag = hidden_augment
+	}
+}
+
+character_event = {
+	id = augment.11
+	desc = EVTDESCaugment11
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment11
+		
+		character_event = { id = augment.12 }
+	}
+}
+
+character_event = {
+	id = augment.12
+	desc = EVTDESCaugment12
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment12
+		
+		random_list = {
+			75 = {
+				character_event = { id = augment.13 }
+			}
+			25 = {
+				character_event = { id = augment.14 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = augment.13
+	desc = EVTDESCaugment13
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment13
+		
+		add_trait = wounded
+	}
+}
+
+character_event = {
+	id = augment.14
+	desc = EVTDESCaugment14
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAaugment14
+		
+		add_trait = maimed
+	}
+}

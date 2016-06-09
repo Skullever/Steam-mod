@@ -1,0 +1,57 @@
+law_groups = {
+	augmentation_laws = {
+		law_type = realm
+		allowed_for_councillors = yes
+	}
+}
+
+de_jure_laws = {
+	augmentation_law_0 = { #Augments banned
+		group = augmentation_laws
+		default = yes
+		
+		potential = {
+			has_global_flag = steamdiscovered
+		}
+		
+		effect = {
+			set_title_flag = no_augments
+			revoke_law = augmentation_law_1
+		}
+		
+		pass_effect = {
+			any_vassal = {
+				limit = { has_character_flag = augmented }
+				opinion = { modifier = banned_my_augment who = ROOT }
+			}
+			any_vassal = {
+				limit = { trait = zealous }
+				opinion = { modifier = religious_banned_augments who = ROOT }
+			}
+		}
+	}
+	augmentation_law_1 = { #Augments allowed
+		group = augmentation_laws
+		
+		potential = {
+			has_global_flag = steamdiscovered
+		}
+		
+		effect = {
+			set_title_flag = augments_allowed
+			revoke_law = augmentation_law_0
+		}
+		
+		pass_effect = {
+			any_vassal = {
+				limit = { has_character_flag = augmented }
+				opinion = { modifier = allowed_my_augment who = ROOT }
+			}
+			any_vassal = {
+				limit = { trait = zealous }
+				opinion = { modifier = religious_allowed_augments who = ROOT }
+			}
+		}
+		
+	}
+}

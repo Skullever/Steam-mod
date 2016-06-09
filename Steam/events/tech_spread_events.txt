@@ -1,0 +1,94 @@
+namespace = techspread
+
+narrative_event = { #England discovers steam tech
+	id = techspread.1
+	title = EVTTITLEtechspread1
+	desc = EVTDESCtechspread1
+	
+	trigger = { 
+		year = 1045 
+		has_landed_title = k_england
+		NOT = {
+			has_global_flag = steamdiscovered
+		}
+	}
+	
+	immediate = {
+		set_global_flag = steamdiscovered
+	}
+	
+	option = {
+		name = EVTOPTAtechspread1
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+}
+narrative_event = { #England gives Portugal tech
+	id = techspread.2
+	title = EVTTITLEtechspread2
+	desc = EVTDESCtechspread2
+	
+	trigger = {
+		year = 1068
+		has_landed_title = k_portugal
+		NOT = {
+			has_global_flag = portuguesesteam
+		}
+		has_global_flag = steamdiscovered
+	}
+	
+	immediate = {
+		set_global_flag = portuguesesteam
+	}
+	
+	option = {
+		name = EVTOPTAtechspread2
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+}
+narrative_event = { #Tech spreads to Western Europe
+	id = techspread.3
+	title = EVTTITLEtechspread3
+	desc = EVTDESCtechspread3
+	
+	trigger = {
+		year = 1080
+		region = world_europe_west
+		NOT = {
+			has_global_flag = westernsteam
+		}
+		has_global_flag = portuguesesteam
+		independent = yes
+		NOT = {
+			AND = {
+				k_england = {
+					holder_scope = {
+						war = no
+					}
+				}
+				k_portugal = {
+					holder_scope = {
+						war = no
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = westernsteam
+	}
+	
+	option = {
+		name = EVTOPTAtechspread3
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+}

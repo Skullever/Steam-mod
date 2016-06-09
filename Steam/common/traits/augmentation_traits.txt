@@ -1,0 +1,92 @@
+gearhead = {
+	random = no
+	ruler_designer_cost = 15
+	
+	learning = 5
+	stewardship = 5
+	intrigue = 3
+	martial = 2
+	diplomacy = 2
+	
+	general_opinion = -15
+	
+	ai_rationality = 10
+	
+	male_compliment = COMPL_TECH
+	female_compliment = COMPL_TECH
+	male_insult = INSULT_TECH
+	female_insult = INSULT_TECH
+}
+
+clockheart = {
+	random = no
+	ruler_designer_cost = 25
+	
+	martial = 3
+	health = 5
+	
+	general_opinion = -15
+	
+	male_compliment = COMPL_TECH
+	female_compliment = COMPL_TECH
+	male_insult = INSULT_TECH
+	female_insult = INSULT_TECH
+}
+
+ironjaw = {
+	random = no
+	ruler_designer_cost = -10
+	
+	diplomacy = 2
+	
+	general_opinion = -20
+	
+	male_compliment = COMPL_TECH
+	female_compliment = COMPL_TECH
+	male_insult = INSULT_TECH
+	female_insult = INSULT_TECH
+}
+
+heavyhand = {
+	random = no
+	ruler_designer_cost = 5
+	
+	martial = 2
+	
+	general_opinion = -5
+	
+	male_compliment = COMPL_TECH
+	female_compliment = COMPL_TECH
+	male_insult = INSULT_TECH
+	female_insult = INSULT_TECH
+}
+
+ironfoot = {
+	random = no
+	ruler_designer_cost = 2
+	
+	local_movement_speed = 0.1
+	
+	general_opinion = -5
+	
+	male_compliment = COMPL_TECH
+	female_compliment = COMPL_TECH
+	male_insult = INSULT_TECH
+	female_insult = INSULT_TECH
+}
+
+steameye = {
+	random = no
+	ruler_designer_cost = 3
+	
+	intrigue = 2
+	martial = 2
+	plot_discovery_chance = 0.1
+	
+	general_opinion = -10
+	
+	male_compliment = COMPL_TECH
+	female_compliment = COMPL_TECH
+	male_insult = INSULT_TECH
+	female_insult = INSULT_TECH
+}

@@ -1,0 +1,66 @@
+decisions = {
+	buyaugment = {
+		potential = {
+			age = 16
+		
+			OR = {
+				AND = {
+					has_global_flag = steamdiscovered 
+					OR = {
+						top_liege = { has_landed_title = e_britannia }
+						ROOT = { has_landed_title = e_britannia }
+					}
+				}
+				AND = {
+					has_global_flag = portuguesesteam
+					OR = {
+						top_liege = { has_landed_title = k_portugal }
+						ROOT = { has_landed_title = k_portugal }
+					}
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 100
+			NOT = {
+				health_traits = 1
+			}
+		}
+	
+		effect = {
+			character_event = { id = augment.1 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			
+			modifier = {
+				factor = 0.15
+				has_character_flag = augmented
+			}
+			
+			modifier = {
+				factor = 0.05
+				has_character_flag = hidden_augment
+			}
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 100
+				}
+			}
+			
+			modifier = {
+				factor = 0.10
+				has_law = augmentation_law_0
+			}
+		}
+	}
+}

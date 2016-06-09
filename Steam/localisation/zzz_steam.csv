@@ -1,0 +1,79 @@
+gearhead;Gearhead;;;;;;;;;;x
+gearhead_desc;This person has a mind of metal, enchancing their brain.;;;;;;;;;;x
+clockheart;Clockheart;;;;;;;;;;x
+clockheart_desc;This person has a heart of iron, enhancing their health.;;;;;;;;;;x
+ironjaw;Ironjaw;;;;;;;;;;;x
+ironjaw_desc;This person has a jaw of metal, enhancing their speech.;;;;;;;;;;x
+heavyhand;Heavyhand;;;;;;;;;;x
+heavyhand_desc;This person has arms of iron, increasing their strength.;;;;;;;;;;x
+ironfoot;Ironfoot;;;;;;;;;;x
+ironfoot_desc;This person has legs of metal, increasing their speed.;;;;;;;;;;x
+steameye;Steameye;;;;;;;;;;x
+steameye_desc;This person has steam-powered eyes, enhancing their vision.;;;;;;;;;;x
+COMPL_TECH;enhanced;;;;;;;;;;x
+INSULT_TECH;inhuman;;;;;;;;;;x
+EVTDESCaugment1;The new steam technology can be used to augment and enhance your body. Would you like to purchase an augmentation?;;;;;;;;;;x
+EVTOPTAaugment1;Buy a gearhead, enhancing your mind.;;;;;;;;;;x
+EVTOPTBaugment1;Buy a clockheart, enhancing your endurance and health.;;;;;;;;;;x
+EVTOPTCaugment1;Buy an ironjaw, enhancing your speech.;;;;;;;;;;x
+EVTOPTDaugment1;More...;;;;;;;;;;x
+EVTDESCaugment2;More options...;;;;;;;;;;x
+EVTOPTAaugment2;Buy a heavyhand, increasing your strength.;;;;;;;;;;x
+EVTOPTBaugment2;Buy an ironfoot, increasing your speed.;;;;;;;;;;x
+EVTOPTCaugment2;Buy a steameye, increasing your vision.;;;;;;;;;;x
+EVTOPTDaugment2;Nevermind.;;;;;;;;;;x
+EVTDESCaugment3;Your mind feels sharper than ever before.;;;;;;;;;;x
+EVTOPTAaugment3;Now I know all!;;;;;;;;;;x
+EVTDESCaugment4;You can feel your new heart ticking away.;;;;;;;;;;x
+EVTOPTAaugment4;I could run for days!;;;;;;;;;;x
+EVTDESCaugment5;Your speech is clearer than it's ever been.;;;;;;;;;;x
+EVTOPTAaugment5;My tongue is as smooth as silver, errr... iron!;;;;;;;;;;x
+EVTDESCaugment6;You can feel the power coursing through your arm.;;;;;;;;;;x
+EVTOPTAaugment6;None will withstand my might!;;;;;;;;;;x
+EVTDESCaugment7;You can feel the power coursing through your legs.;;;;;;;;;;x
+EVTOPTAaugment7;None will outpace me!;;;;;;;;;;x
+EVTDESCaugment8;You can see things you never could before.;;;;;;;;;;x
+EVTOPTAaugment8;Now nothing can hide from me!;;;;;;;;;;x
+EVTTITLEtechspread1;The discovery of Steam;;;;;;;;;;x
+EVTDESCtechspread1;Your researchers have discovered that using steam you can power mechanical wonders.;;;;;;;;;;x
+EVTOPTAtechspread1;What mysteries will we uncover now?;;;;;;;;;;x
+EVTTITLEtechspread2;The English Steam;;;;;;;;;;x
+EVTDESCtechspread2;An English ambassador comes before you, offering a technology of great military power in exchange for using it to weaken Spain.;;;;;;;;;;x
+EVTOPTAtechspread2;At last Portugal will rise!;;;;;;;;;;x
+buyaugment;Buy Augmentation;;;;;;;;;;x
+buyaugment_desc;You can buy a steam-powered augmentation as long as you can afford it and are healthy enough for the operation.;;;;;;;;;;x
+e_britannia;Righteous Britannian Empire;;;;;;;;;;x
+e_britannia_adj;Righteous Britannian;;;;;;;;;;x
+FOABRITANNIA;Righteous Emperor;;;;;;;;;;x
+BM_CHARLEMAGNE;The Discovery of Steam;;;;;;;;;;x
+BM_DISCOVERY_OF_STEAM;King Edward of England has discovered that superheated water can be used to produce power. This steam could have many potential applications.;;;;;;;;;;x
+BM_THE_OLD_GODS;The Anglo-Saxon Reply;;;;;;;;;;x
+BM_THE_ANGLO_SAXON_REPLY;Following William of Normandy's failed invasion, Godwinson replied in kind. Using his new steam weapons the English easily conquered Normandy. Can they be stopped?;;;;;;;;;;x
+BM_FATE_OF_ENGLAND;O Reino das Sombras;;;;;;;;;;x
+BM_O_REINO_DAS_SOMBRAS;The English have provided Portugal weapons in order to defeat the common enemy in Spain. A secretive organization calling itself the Realm of Shadows quickly sprung on the opportunity, taking the technology for itself and rising to power. What plans do they have for the world?;;;;;;;;;;x
+augmentation_laws;Augmentation Laws;;;;;;;;;;x
+augmentation_laws_desc;Status of steam augments in the realm.;;;;;;;;;;x
+augmentation_law_0;Augments banned;;;;;;;;;;x
+augmentation_law_0_option;Banned;;;;;;;;;;x
+augmentation_law_0_desc;Augments are banned in the realm, any person found to be using them must surrender them - willingly or not.;;;;;;;;;;x
+augmentation_law_1;Augments permitted;;;;;;;;;;x
+augmentation_law_1_option;Allowed;;;;;;;;;;x
+augmentation_law_1_desc;Augments are allowed in the realm, anybody can use them.;;;;;;;;;;x
+banned_my_augment;Banned my augment;;;;;;;;;;x
+religious_banned_augments;Banned augments;;;;;;;;;;x
+allowed_my_augment;Allowed my augment;;;;;;;;;;x
+religious_allowed_augments;Allowed augments;;;;;;;;;;x
+EVTDESCaugment9;Augments are illegal in your realm, and word has gotten to your liege that you might have a couple of augmentations.;;;;;;;;;;x
+EVTOPTAaugment9;I'll craft a disguise to hide my augmentations!;;;;;;;;;;x
+EVTOPTBaugment9;I'll flee the realm!;;;;;;;;;;x
+EVTOPTCaugment9;I have no choice but to face the law...;;;;;;;;;;x
+EVTDESCaugment10;Your disguise is successful, your liege doesn't notice anything strange.;;;;;;;;;;x
+EVTOPTAaugment10;I'll have to lie low for a while...;;;;;;;;;;x
+EVTDESCaugment11;Your disguise fails, your liege sees your augments!;;;;;;;;;;x
+EVTOPTAaugment11;Damn it!;;;;;;;;;;x
+EVTDESCaugment12;Having been found guilty of possessing augments, your liege orders their immediate removal.;;;;;;;;;;x
+EVTOPTAaugment12;I hope this doesn't hurt too much...;;;;;;;;;;x
+EVTDESCaugment13;The procedure is a success, but leaves behind a bloody wound.;;;;;;;;;;x
+EVTOPTAaugment13;That could've been worse...;;;;;;;;;;x
+EVTDESCaugment14;While the augment was successfully removed, the procedure leaves you horribly maimed.;;;;;;;;;;x
+EVTOPTAaugment14;Why me?!;;;;;;;;;;x

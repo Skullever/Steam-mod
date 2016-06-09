@@ -1,0 +1,15 @@
+bm_THE_ANGLO_SAXON_REPLY = {
+	name = "BM_THE_OLD_GODS"
+	desc = "BM_THE_ANGLO_SAXON_REPLY"
+	date = 1067.1.1
+	
+	selectable_character = { id = 122 } #Harold Godwinson
+}
+bm_O_REINO_DAS_SOMBRAS = {
+	name = "BM_FATE_OF_ENGLAND"
+	desc = "BM_O_REINO_DAS_SOMBRAS"
+	date = 1068.1.1
+	
+	selectable_character = { id = 122 } #Harold Godwinson
+	selectable_character = { id = 109607 } #Nuno II
+}
